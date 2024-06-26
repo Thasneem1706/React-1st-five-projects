@@ -1,0 +1,9 @@
+.active{
+    color: #fff700;
+}
+.inactive{
+    color: #000;
+}
+.star-rating{
+    margin: 5em ;
+}
