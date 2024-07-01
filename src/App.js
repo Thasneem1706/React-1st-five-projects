@@ -1,20 +1,30 @@
 
 import './App.css';
-import Accordion from './components/accordion';
-import ImageSlider from './components/image-slider';
-import LoadMoreData from './components/load-more-data';
-import RandomColor from './components/random-color';
-import StarRating from './components/star-rating';
+import LightDarkMode from './components/light-dark-mode';
+import QRCodeGenerator from './components/qr-code-generator';
+import ScrollIndicator from './components/scroll-indicator';
+// import Accordion from './components/accordion';
+// import ImageSlider from './components/image-slider';
+// import LoadMoreData from './components/load-more-data';
+// import RandomColor from './components/random-color';
+// import StarRating from './components/star-rating';
+import TreeView from './components/tree-view';
+import menus from './components/tree-view/data';
 
 function App() {
   return (
     <div className="App">
 
-      <Accordion />
+      {/* <Accordion />
       <RandomColor /> 
       <StarRating noOfStars={10}/> 
       <ImageSlider  url={'https://picsum.photos/v2/list'} limit={'10'} page={'1'}/> 
-      <LoadMoreData />
+      <LoadMoreData /> */}
+
+      <TreeView menus={menus}/> 
+      <QRCodeGenerator /> 
+      <LightDarkMode />
+      <ScrollIndicator url={'https://dummyjson.com/products?limit=100'}/>
       
     </div>
   );
